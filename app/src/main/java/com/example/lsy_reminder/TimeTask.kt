@@ -30,7 +30,7 @@ class TimeTask<T : TimeTask.Task?>(context: Context, actionName: String, task: T
 
     fun startLooperTask() {
         if (null != mTask) {
-            mTask.exeTask()
+//            mTask.exeTask()
             configureAlarmManager(mTask.period())
         }
     }

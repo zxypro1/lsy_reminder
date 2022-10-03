@@ -10,14 +10,14 @@
         android:id="@+id/sleep_button"
         android:layout_width="163dp"
         android:layout_height="105dp"
-        android:backgroundTint="@color/pink"
+        android:backgroundTint="@color/grey"
         android:text="现在睡觉"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintVertical_bias="0.314" />
 
     <TextView
         android:id="@+id/textView"
@@ -34,8 +34,8 @@
 
     <EditText
         android:id="@+id/sleep_hours"
-        android:layout_width="59dp"
-        android:layout_height="42dp"
+        android:layout_width="62dp"
+        android:layout_height="61dp"
         android:ems="10"
         android:inputType="number"
         android:textAlignment="center"
@@ -45,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.607"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sleep_button"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.14" />
 
     <TextView
         android:id="@+id/textView3"
@@ -59,5 +59,29 @@
         app:layout_constraintStart_toEndOf="@+id/sleep_hours"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.539" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="228dp"
+        android:backgroundTint="@color/grey"
+        android:text="取消定时"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sleep_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/sleep_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
