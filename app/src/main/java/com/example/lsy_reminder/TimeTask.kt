@@ -50,14 +50,14 @@ class TimeTask<T : TimeTask.Task?>(context: Context, actionName: String, task: T
         val pendIntent = pendingIntent
         when {
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.M -> {
-                manager.setExactAndAllowWhileIdle(
+                manager.set(
                     AlarmManager.ELAPSED_REALTIME_WAKEUP,
                     SystemClock.elapsedRealtime() + time,
                     pendIntent
                 )
             }
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT -> {
-                manager.setExact(
+                manager.set(
                     AlarmManager.ELAPSED_REALTIME_WAKEUP,
                     SystemClock.elapsedRealtime() + time,
                     pendIntent
